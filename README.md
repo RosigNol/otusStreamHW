@@ -43,16 +43,27 @@ Event Collaboration cтиль взаимодействия с использов
 
 
 Инструкция по деплою: 
-1. Создание ns: kubectl apply -f k8s/namespaces.yaml
-2. Установка RabbitMQ: helm install -f k8s/rabbit.yaml my-rabbit bitnami/rabbitmq -n rabbit
-3. Запуск сервисов:
+1. Создание ns:
+   ```bash
+   kubectl apply -f k8s/namespaces.yaml
+   ```
+3. Установка RabbitMQ:
+   ```bash
+   helm install -f k8s/rabbit.yaml my-rabbit bitnami/rabbitmq -n rabbit
+   ```
+4. Запуск сервисов:
+   ```bash
    kubectl apply -f k8s/config.yaml -f k8s/postgres.yaml -n postgres
    kubectl apply -f k8s/config.yaml -f k8s/auth-app.yaml -n auth
    kubectl apply -f k8s/config.yaml -f k8s/user-app.yaml -n user
    kubectl apply -f k8s/config.yaml -f k8s/billing-app.yaml -n billing
    kubectl apply -f k8s/config.yaml -f k8s/order-app.yaml -n order
    kubectl apply -f k8s/config.yaml -f k8s/notification-app.yaml -n notification
-4. Nginx: kubectl apply -f k8s/nginx-routes.yaml
+   ```
+5. Nginx:
+   ```bash
+   kubectl apply -f k8s/nginx-routes.yaml
+   ```
 
 Дополнительный материал: 
 1. Результаты тестов: test_result.png, сами тесты: OTUS. Stream processing.postman_collection.json
