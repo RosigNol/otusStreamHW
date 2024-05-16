@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "154271b5-5d78-475c-a45c-975f56fa6abe",
+		"_postman_id": "679badb6-a590-4889-a550-3ae5211ed653",
 		"name": "OTUS. Stream processing",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19230276"
 	},
 	"item": [
 		{
@@ -16,7 +17,8 @@
 							"    pm.response.to.have.status(200);",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -25,7 +27,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"first_name\": \"user first name\",\n    \"last_name\": \"user last name\",\n    \"login\": \"user\",\n    \"password\": \"user\"\n}",
+					"raw": "{\n    \"first_name\": \"user first name\",\n    \"last_name\": \"user last name\",\n    \"login\": \"user2\",\n    \"password\": \"user2\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -33,9 +35,10 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/user/register",
+					"raw": "arch.homework/user/register",
 					"host": [
-						"{{baseUrl}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"user",
@@ -62,7 +65,8 @@
 							"",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -71,7 +75,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"login\": \"user\",\n    \"password\": \"user\"\n}",
+					"raw": "{\n    \"login\": \"user2\",\n    \"password\": \"user2\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -79,9 +83,10 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/auth/login",
+					"raw": "arch.homework/auth/login",
 					"host": [
-						"{{baseUrl}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"auth",
@@ -107,7 +112,8 @@
 							"        pm.expect(jsonData.amount).to.eql(100);",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -124,9 +130,10 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/billing/top-up",
+					"raw": "arch.homework/billing/top-up",
 					"host": [
-						"{{baseUrl}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"billing",
@@ -147,7 +154,8 @@
 							"    pm.response.to.have.status(200);",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -164,9 +172,10 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/order/create",
+					"raw": "arch.homework/order/create",
 					"host": [
-						"{{baseUrl}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"order",
@@ -193,7 +202,8 @@
 							"});",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -201,9 +211,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/billing/account",
+					"raw": "arch.homework/billing/account",
 					"host": [
-						"{{baseUrl}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"billing",
@@ -228,7 +239,8 @@
 							"});",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -236,9 +248,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/notification/find?page=0&size=-1",
+					"raw": "arch.homework/notification/find?page=0&size=-1",
 					"host": [
-						"{{baseUrl}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"notification",
@@ -269,7 +282,8 @@
 							"    pm.response.to.have.status(200);",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -286,9 +300,10 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/order/create",
+					"raw": "arch.homework/order/create",
 					"host": [
-						"{{baseUrl}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"order",
@@ -315,7 +330,8 @@
 							"});",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -323,9 +339,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/billing/account",
+					"raw": "arch.homework/billing/account",
 					"host": [
-						"{{baseUrl}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"billing",
@@ -350,7 +367,8 @@
 							"});",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -358,9 +376,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/notification/find?page=0&size=-1",
+					"raw": "arch.homework/notification/find?page=0&size=-1",
 					"host": [
-						"{{baseUrl}}"
+						"arch",
+						"homework"
 					],
 					"path": [
 						"notification",
@@ -414,8 +433,7 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "",
-			"disabled": true
+			"value": "arch.homework"
 		}
 	]
 }
